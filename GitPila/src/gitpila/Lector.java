@@ -18,7 +18,7 @@ public class Lector implements PilaInterfaz{
          v.addElement(y);
     }
 
-    /*OMetodo para parsear el valor de un string a un int*/
+    /*OMetodo para parsear el valor de un string a un int*/ /*Retorna ultimo valor de la pila*/
     public int Pop() {
        int caracter= Integer.parseInt((String) v.remove(0)) ;
        return caracter;
