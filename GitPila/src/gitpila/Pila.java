@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ Antonio Ixtecoc 15582
+ Esteban Avalos	 15059
+ 
+	Clase encargada de la inicializacion del programa, obtiene la dirreccion
+	del documento, ejecuta las operaciones debidas para leerlo y operarlo
  */
 package gitpila;
 
@@ -13,13 +15,13 @@ import java.io.IOException;
 import java.util.Vector;
 
 public class Pila {
-   
+   /* Inicio del programa*/
     public static void main(String[] args) throws IOException{
         String nombre = "C:\\Users\\AntonioJose\\Desktop\\Prueba.txt";
         Vector v1= new Vector();
         Operaciones op= new Operaciones();
         
-        
+        /* Se manda la direccion al modulo leer archivo para la continuacion de la lectura*/
         try {
             LeerArchivo archivo = new LeerArchivo(nombre);
             String[] ArregloLineas = archivo.abrirArchivo();
@@ -36,6 +38,7 @@ public class Pila {
                     v1.addElement(car);
                 }
                 int x1;
+				/* se recorre el vector de linas y se verifica cada caracter y se envia a su respectiva operacion*/
                 for(x1=0;x1<v1.size();x1++){
                     String car2= (String) v1.elementAt(x1);
                     switch (car2) {
