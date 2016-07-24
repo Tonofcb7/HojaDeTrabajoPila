@@ -18,7 +18,7 @@ public class Pila {
    /* Inicio del programa*/
     public static void main(String[] args) throws IOException{
         String nombre = "C:\\Users\\AntonioJose\\Desktop\\Prueba.txt";
-        Vector v1= new Vector();
+        
         Operaciones op= new Operaciones();
         
         /* Se manda la direccion al modulo leer archivo para la continuacion de la lectura*/
@@ -29,6 +29,7 @@ public class Pila {
             int y;
                 
             for(y=0;y<ArregloLineas.length;y++){
+            	Vector v1= new Vector();
                 Lector L1= new Lector();
                 String cad1= ArregloLineas[y];
                 int x;
