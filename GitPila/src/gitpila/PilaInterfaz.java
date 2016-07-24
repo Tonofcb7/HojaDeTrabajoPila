@@ -1,14 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+	Esteban Avalos	15059
+	Antonio Ixtecoc	15582
  */
 package gitpila;
 
-/**
- *
- * @author AntonioJose
- */
+
+/*Clase interfaz del programa*/
 public interface PilaInterfaz {
     public void Push(String y);
     public int Pop();
